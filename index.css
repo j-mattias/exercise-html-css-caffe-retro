@@ -49,13 +49,9 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("assets/hot.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
     color: white;
     font-size: 1.4rem;
-    width: 100%;
     padding: 0 20%;
 }
 
@@ -68,21 +64,24 @@ article > h1 {
 
 article > aside {
     background-color: rgba(139, 0, 0, 0.8);
-    padding: 0.8rem 1.2rem;
-    width: 60%;
+    padding: 1rem 1.2rem;
+    width: 50%;
+    min-width: fit-content;
     text-align: center;
 }
 
 article > aside.slogan:nth-of-type(1) {
-    margin: 0 auto 2rem 10rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
 }
 
 article > aside.slogan:nth-of-type(2) {
-    margin: 0 10rem 2rem auto;
+    margin-bottom: 2rem;
+    align-self: flex-end;
 }
 
 article > section.info {
-    width: 60%;
+    width: 70%;
 }
 
 article > section.info ul {
@@ -141,10 +140,12 @@ section.divider {
 
     article > aside {
         width: 90%;
+        min-width: auto;
     }
 
     article > aside.slogan:nth-of-type(1) {
         margin: 0 0 2rem 0;
+        align-self: center;
     }
 
     article > aside.slogan:nth-of-type(2) {
@@ -157,5 +158,20 @@ section.divider {
 
     article > section.info ul {
         padding: 1rem 1.2rem;
+    }
+
+    /* Hot section */
+    article#hot {
+        background-position: center;
+    }
+
+    /* Juicy section */
+    article#juicy {
+        background-position: center;
+    }
+
+    /* Cozy section */
+    article#cozy {
+        background-position: center;
     }
 }
