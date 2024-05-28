@@ -1,0 +1,128 @@
+:root {
+    --font-text: "Poiret One", sans-serif;
+    --font-title: "Spirax", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-text);
+}
+
+/* Navigation */
+header {
+    background-color: rgba(58, 0, 0, 0.432);
+    width: 100%;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    padding: 0.8rem 2rem;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Article shared styling */
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/hot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    font-size: 1.4rem;
+    width: 100%;
+    padding: 0 20%;
+}
+
+article > h1 {
+    color: darkred;
+    font-size: 6rem;
+    font-family: var(--font-title);
+    margin-bottom: 1.5rem;
+}
+
+article > aside {
+    background-color: rgba(139, 0, 0, 0.8);
+    padding: 0.8rem 1.2rem;
+    width: 60%;
+    text-align: center;
+}
+
+article > aside.slogan:nth-of-type(1) {
+    margin: 0 auto 2rem 10rem;
+}
+
+article > aside.slogan:nth-of-type(2) {
+    margin: 0 10rem 2rem auto;
+}
+
+article > section.info {
+    width: 60%;
+}
+
+article > section.info ul {
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem 3rem;
+}
+
+section.info ul > li {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hot section */
+article#hot {
+    background-image: url("assets/hot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Juicy section */
+article#juicy {
+    background-image: url("assets/juicy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Cozy section */
+article#cozy {
+    background-image: url("assets/cosy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article#cozy address {
+    font-style: normal;
+}
+
+/* Divider between sections */
+section.divider {
+    height: 1rem;
+    background-color: darkred;
+}
